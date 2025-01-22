@@ -11,15 +11,15 @@ const HeroSection = () => {
                     </p>
                     <h1 className={"text-big-title text-white-100"}>Your Go-to Solution For Using <span
                         className={' p-1 bg-neutral-dark-60 rounded-xl'}>Ollama</span></h1>
-                    <p className={'text-subtitle text-white-100/80'}>Use the power of ollama locally featuring stunning
+                    <p className={'text-lead text-white-100/80'}>Use the power of ollama locally featuring stunning
                         UI</p>
                 </div>
                 <div className={'flex flex-row items-center justify-center gap-10'}>
-                    <Button size={'lg'} className={'rounded-xl'}>
+                    <Button onClick={() => window.open(process.env.RAEL_AI_DOWNLOAD_LINK, '_blank')} size={'lg'} className={'rounded-xl'}>
                         <DownloadCloud/>
-                        Download
+                        Download (desktop)
                     </Button>
-                    <Button size={'lg'} className={'rounded-xl bg-neutral-dark-80'}>
+                    <Button onClick={() => window.location.href = "#installation"} size={'lg'} className={'rounded-xl bg-neutral-dark-80'}>
                         <ArrowDown/>
                         Installation steps
                     </Button>

@@ -59,8 +59,8 @@ export default {
                 fontSize: {
                     'big-title' : ['64px', '96px'],
                     title : ['40px', '60px'],
-                    subtitle : ['20px', '30px'],
-                    lead : ['18px', '27px'],
+                    subtitle : ['26px', '39px'],
+                    lead : ['20px', '30px'],
                     base : '16px',
                     small : '14px',
                     'small-2' : '12px',

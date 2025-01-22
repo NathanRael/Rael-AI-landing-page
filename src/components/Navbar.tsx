@@ -7,8 +7,8 @@ const Navbar = () => {
                RAEL AI
            </h1>
            <ul className={'flex text-white-100 flex-row gap-10 items-center  content-center'}>
-               <NavItem name={'Features'} active={false}/>
-               <NavItem name={'Installation'} active={false}/>
+               <NavItem  name={'Features'} active={false}/>
+               <NavItem  name={'Installation'} active={false}/>
                <NavItem name={'Download'} active={false}/>
            </ul>
        </nav>
@@ -19,6 +19,8 @@ export default Navbar
 
 const NavItem = ({name, active} : {name : string, active : boolean}) => {
     return (
-        <li className={cn('text-lead text-white-100/60 hover:text-white-100 cursor-pointer', active && 'text-white-100')}>{name}</li>
+        <a href={`#${name.toLowerCase()}`}>
+            <li className={cn('text-lead text-white-100/60 hover:text-white-100 cursor-pointer', active && 'text-white-100')}>{name}</li>
+        </a>
     )
 }
