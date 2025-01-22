@@ -7,8 +7,8 @@ const Navbar = () => {
                RAEL AI
            </h1>
            <ul className={'flex text-white-100 flex-row gap-10 items-center  content-center'}>
-               <NavItem name={'Installation'} active={false}/>
                <NavItem name={'Features'} active={false}/>
+               <NavItem name={'Installation'} active={false}/>
                <NavItem name={'Download'} active={false}/>
            </ul>
        </nav>

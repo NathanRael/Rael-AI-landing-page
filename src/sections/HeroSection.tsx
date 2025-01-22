@@ -1,5 +1,5 @@
 ﻿import {Button} from "rael-ui";
-import {DownloadCloud, PlayCircle} from "lucide-react";
+import {ArrowDown, DownloadCloud} from "lucide-react";
 import {ChatPageImage} from "@/assets";
 
 const HeroSection = () => {
@@ -7,19 +7,21 @@ const HeroSection = () => {
         <section className={'flex flex-col items-center justify-center gap-20 w-full px-10 pt-40 '}>
             <div className="flex flex-col justify-center items-center gap-10">
                 <div className={'flex flex-col items-center justify-center'}>
-                    <p className={'text-lead text-white-100'}>Developed by <span className={'underline cursor-pointer'}>Natanael R</span></p>
+                    <p className={'text-lead text-white-100'}>Developed by <span className={'underline cursor-pointer'}>Natanael R</span>
+                    </p>
                     <h1 className={"text-big-title text-white-100"}>Your Go-to Solution For Using <span
                         className={' p-1 bg-neutral-dark-60 rounded-xl'}>Ollama</span></h1>
-                    <p className={'text-title text-white-100/80'}>Use the power of ollama locally within a stunning UI</p>
+                    <p className={'text-subtitle text-white-100/80'}>Use the power of ollama locally featuring stunning
+                        UI</p>
                 </div>
                 <div className={'flex flex-row items-center justify-center gap-10'}>
                     <Button size={'lg'} className={'rounded-xl'}>
                         <DownloadCloud/>
                         Download
                     </Button>
-                    <Button size={'lg'}  className={'rounded-xl bg-neutral-dark-80'}>
-                        <PlayCircle/>
-                        See demo
+                    <Button size={'lg'} className={'rounded-xl bg-neutral-dark-80'}>
+                        <ArrowDown/>
+                        Installation steps
                     </Button>
                 </div>
             </div>
@@ -31,3 +33,5 @@ const HeroSection = () => {
     )
 }
 export default HeroSection
+
+
