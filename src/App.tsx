@@ -12,7 +12,6 @@ function App() {
                     <Route index path={'/'} element={<MainPage/>}/>
                     <Route path={'/download'} element={<DownloadPage/>}/>
                 </Route>
-
             </Routes>
         </>
     )

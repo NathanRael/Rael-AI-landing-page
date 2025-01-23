@@ -112,7 +112,7 @@ html {
     }
 
     .section {
-        @apply flex flex-col items-center justify-center px-10 pt-[256px]
+        @apply flex flex-col items-center justify-center px-10 pt-[256px] max-[600px]:px-2
     }
 }
 

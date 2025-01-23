@@ -17,10 +17,10 @@ const FeatureSection = () => {
     
     return (
         <section id={'features'} className={'section  gap-20'}>
-            <h1 className={'text-title   text-white-100 text-wrap max-w-[50%] text-center '}>
+            <h1 className={'text-title   text-white-100 text-wrap w-[50%] max-lg:w-full  text-center '}>
                 Get most of <span className={"p-1 bg-neutral-dark-60 rounded-xl"}>ollama features</span> with a
                 graphical user interface</h1>
-            <div className={'flex flex-row items-center justify-between gap-[128px]'}>
+            <div className={'flex flex-row items-center justify-between ma-lg:justify-center max-[1440px]:flex-col-reverse max-lg:gap-20 gap-[128px]'}>
                 <div className={'space-y-4'}>
                     {
                         FEATURES.map((feature: Feature) => (
@@ -29,7 +29,7 @@ const FeatureSection = () => {
                     }
                 </div>
                 <img src={FEATURES[activeId].image} alt={'PredefinedChatbot'}
-                     className={"rounded-3xl  object-cover border border-neutral-dark-60 w-[860px]"}/>
+                     className={"rounded-3xl  object-cover border border-neutral-dark-60 max-md:w-full max-lg:w-[70%]  w-[50%]"}/>
             </div>
 
         </section>
@@ -61,12 +61,12 @@ const FeatureCard = ({active, onClick, ...props}: FeatureCard) => {
     }
     
     return (
-        <div onClick={onClick} className={cn('flex  w-[560px] gap-6 flex-row cursor-pointer bg-gradient-to-r hover:from-neutral-dark-40 rounded-3xl p-4   items-center justify-between', active && 'from-neutral-dark-40')}>
-            <Icon variant={'ghost'}>
+        <div onClick={onClick} className={cn('flex max-[600px]:w-[90%]  w-[560px] gap-6 flex-row cursor-pointer bg-gradient-to-r hover:from-neutral-dark-40 rounded-3xl p-4   items-center justify-between', active && 'from-neutral-dark-40')}>
+            <Icon variant={'ghost'} className={'max-[600px]:hidden visible'}>
                 {getIcon(props.icon)}
             </Icon>
             <div className={"space-y-2"}>
-                <h1 className={'text-lead font-bold text-white-100 '}>{props.title}</h1>
+                <h1 className={'text-lead  font-bold text-white-100 '}>{props.title}</h1>
                 <p className={'text-base text-white-100/80'}>{props.description}</p>
             </div>
         </div>

@@ -6,7 +6,7 @@ const InstallationSection = () => {
     const navigate = useNavigate();
     return (
         <section id={'installation'} className={'section gap-20'}>
-            <h1 className={'text-title  text-white-100 text-wrap max-w-[50%] text-center '}><span
+            <h1 className={'text-title  text-white-100 text-wrap max-[600px]:w-full w-[50%] text-center '}><span
                 className={"p-1 bg-neutral-dark-60 rounded-xl"}>Install Rael AI</span> with only two steps
             </h1>
             <InstallStep stepNumber={1} 
@@ -32,7 +32,7 @@ const InstallStep = ({title, desc, stepNumber}: {
     stepNumber: number
 }) => {
     return (
-        <div className={'flex p-6 w-[60%] rounded-2xl bg-gradient-to-r  from-neutral-dark-60/20  flex-col items-start justify-start gap-4'}>
+        <div className={'flex p-6 max-[600px]:w-full w-[60%] rounded-2xl bg-gradient-to-r  from-neutral-dark-60/20  flex-col items-start justify-start gap-4'}>
             <div className={'flex  flex-row items-center justify-center gap-2'}>
                 <p className={'p-2 bg-neutral-dark-60 text-white-100 text-lead font-bold rounded-full size-10 flex items-center justify-center'}>{stepNumber}</p>
                 <h2 className={'text-lead text-white-100 font-bold'}>{title}</h2>
