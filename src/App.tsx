@@ -1,20 +1,23 @@
-import Navbar from "@/components/Navbar"
-import HeroSection from "@/sections/HeroSection.tsx";
-import FeatureSection from "@/sections/FeatureSection.tsx";
-import InstallationSection from "@/sections/InstallationSection.tsx";
-import Footer from "@/sections/FooterSection.tsx";
+import {Route, Routes} from "react-router-dom";
+import MainPage from "@/pages/MainPage";
+import DownloadPage from "@/pages/DownloadPage.tsx";
+import AppLayout from "@/layout/AppLayout.tsx";
 
 function App() {
 
     return (
-        <section className="flex pb-10 flex-col itmes-center justify-center">
-            <Navbar/>
-            <HeroSection/>
-            <FeatureSection/>
-            <InstallationSection/>
-            <Footer/>
-        </section>
+        <>
+            <Routes>
+                <Route element={<AppLayout/>}>
+                    <Route index path={'/'} element={<MainPage/>}/>
+                    <Route path={'/download'} element={<DownloadPage/>}/>
+                </Route>
+
+            </Routes>
+        </>
     )
 }
 
 export default App
+
+
