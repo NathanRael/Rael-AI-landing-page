@@ -1,18 +1,21 @@
 ﻿import {ExternalLink} from "lucide-react";
+import {ollamaWebsite} from "../../env.ts";
+import {useNavigate} from "react-router-dom";
 
 const InstallationSection = () => {
+    const navigate = useNavigate();
     return (
         <section id={'installation'} className={'section gap-20'}>
             <h1 className={'text-title  text-white-100 text-wrap max-w-[50%] text-center '}><span
                 className={"p-1 bg-neutral-dark-60 rounded-xl"}>Install Rael AI</span> with only two steps
             </h1>
             <InstallStep stepNumber={1} 
-                         title={<p>Download and install <span className={'underline cursor-pointer space-x-2 relative'}>Ollama <ExternalLink className={'absolute top-0 -right-6'}/> </span></p>} 
+                         title={<p>Download and install <span onClick={() => window.open(ollamaWebsite, '_blank')} className={'underline cursor-pointer space-x-2 relative'}>Ollama <ExternalLink className={'absolute top-0 -right-6'}/> </span></p>} 
                          desc={<p>Since this project relies on ollama.Head off to <span className={'underline cursor-pointer'}>ollama website</span> and download the app according to your OS</p>}
 
             /> 
             <InstallStep stepNumber={2} 
-                         title={<p>Get <span
+                         title={<p>Get <span onClick={() => navigate('/download')}
                              className={'underline cursor-pointer space-x-2 relative'}>rael-ai</span> and you're ready to go </p>}
                          desc={<p>Once ollama installed, download rael-ai and launch it.</p>}
 
