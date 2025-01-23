@@ -14,7 +14,7 @@ const DownloadPage = () => {
                    <DownloadCloud/>
                    Download (0.1.0-beta)
                </Button>
-               <p className={'text-base text-white-100/60'}>* This beta version is only available for windows user</p>
+               <p className={'text-base text-white-100/60'}>* This beta version is only available for windows user, the web version is coming soon</p>
            </div>
         </section>
     )

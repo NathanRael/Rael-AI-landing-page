@@ -14,8 +14,7 @@ const HeroSection = () => {
                     </p>
                     <h1 className={"text-big-title text-white-100"}>Your Go-to Solution For Using <span
                         className={' p-1 bg-neutral-dark-60 rounded-xl'}>Ollama</span></h1>
-                    <p className={'text-lead text-white-100/80'}>Use the power of ollama locally featuring stunning
-                        UI</p>
+                    <p className={'text-lead text-white-100/80'}>Experience the power of Ollama locally with a sleek, intuitive UI for seamless chatting--available on both web and desktop</p>
                 </div>
                 <div className={'flex flex-row items-center justify-center gap-10'}>
                     <Button onClick={() =>navigate('/download')} size={'lg'} className={'rounded-xl'}>
