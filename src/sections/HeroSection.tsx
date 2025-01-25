@@ -32,7 +32,7 @@ const HeroSection = () => {
                     </Button>
                 </div>
             </div>
-            <div>
+            <div> 
                 <img src={ChatPageImage} alt='Hero section image'
                      className={'rounded-3xl object-cover border border-neutral-dark-60 max-md:w-full w-[1024px]'}/>
             </div>
