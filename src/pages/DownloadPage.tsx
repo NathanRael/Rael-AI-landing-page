@@ -12,7 +12,7 @@ const DownloadPage = () => {
            <div className={'flex flex-col text-center items-center justify-center gap-3'}>
                <Button   onClick={() => window.open(downloadLink, '_blank')} size={'lg'} className={'rounded-xl'}>
                    <DownloadCloud/>
-                   Download (0.1.2-beta)
+                   Download (0.1.5-beta)
                </Button>
                {/*<p className={'text-base text-yellow-300'}>The app is currently unavailable for temporary maintenance. We are addressing concerns raised by our users in*/}
                {/*    recent feedback and working to enhance the app's performance.</p>*/}
