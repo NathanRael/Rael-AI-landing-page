@@ -5,5 +5,5 @@ export const ollamaWebsite = requireEnv({
 });  
 
 export const downloadLink  = requireEnv({
-    name : "https://drive.google.com/file/d/1cGOYg6gVwGGVz5cDTZph8FTPzYyRzQ57/view?usp=sharing"
+    name : "https://drive.google.com/file/d/1omZ5IfCFZIb2QrDZq2TyQWoItm3KscsV/view?usp=sharing"
 })
